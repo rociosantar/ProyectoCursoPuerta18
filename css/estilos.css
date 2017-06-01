@@ -69,10 +69,30 @@
     background-repeat: repeat-x;
     background-position: 0px 0px;   
 
-        -moz-animation-name: larg;
+    animation-name: larg;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+    -moz-animation-name: larg;
     -moz-animation-duration: 30s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
+}
+
+@keyframes larg {
+
+    from{
+        background-position: 0px 0px;
+    }   
+
+    to{
+        background-position: -3500px 0px;
+    }
+    animation-name: larg;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     
 }
 
