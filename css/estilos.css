@@ -72,7 +72,36 @@
 #sec1 h1{ text-align: center; font-size: 2em; padding-top: 2em; padding-bottom: .4em; 
      text-transform: uppercase;}
 
+/*cursos*/
+#sec6 h1{ text-align: center; font-size: 2em; padding-top: 2em; padding-bottom: .4em; 
+     text-transform: uppercase;}
+     h2{ font-size: 1.5em; padding-top: 2em; padding-bottom: .4em;}
 
+.cursos{
+    overflow: hidden;
+    margin: auto;
+    padding: 20px;
+
+
+}
+
+.cursos li a{
+    width: 400px; 
+    height: 400px;
+    display:block;
+    float: left;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    position: center;
+    
+}
+.cursos li a img{
+    width: 200px; 
+    height: 200px;  
+    border-radius: 100px;
+    position: center;
+}
 /*aliados*/
 .donadores{
     width: 100vw;
