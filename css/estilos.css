@@ -41,13 +41,35 @@
 
         .nav-desk{ display: none;}
 
-    /* Nosotros */
+ /*social*/
+   .social {
+    position: fixed; 
+    left: 0; 
+    top: 200px; 
+    z-index: 2000; 
+}
+ 
+.social ul li a {
+        display: inline-block;
+        color:#fff;
+        padding: 0px 5px;
+        text-decoration: none;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease; 
+}
 
-    #sec1{ background-color: #b7b7b7; position: relative; top: 0vh; left: 0vw; }
-    .video{width: 85vw;  position:absolute; top: 20vh; left: 7.5vw;}
-    .video-equidad{ max-width: 100%; }
+.social ul li a:hover {
+        padding: 0px 8px; 
+}
 
-    #sec1 h1{ text-align: center; font-size: 2em; padding-top: 2em; padding-bottom: .4em; 
+/* Nosotros */
+
+#sec1{ background-color: #b7b7b7; position: relative; top: 0vh; left: 0vw; }
+.video{width: 85vw;  position:absolute; top: 20vh; left: 7.5vw;}
+.video-equidad{ max-width: 100%; }
+
+#sec1 h1{ text-align: center; font-size: 2em; padding-top: 2em; padding-bottom: .4em; 
      text-transform: uppercase;}
 
 
