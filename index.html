@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilos_escritorio.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/timeline.css">
-    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
 </head>
@@ -122,7 +122,9 @@
             <div >
                 <ul class="cursos">
                     <li>
-                        <a href="" style=""><img src="img/FundacionEquidad.CursoJava.20160518.003.jpg"><h2>Recursos Humanos</h2><p>Conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal</p></a>
+                        <a href="" style=""><img src="img/FundacionEquidad.CursoJava.20160518.003.jpg"><h2>Recursos Humanos</h2><p>Conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal</p><button id="boton-modalcursos">ver más...</button> 
+                        </a>
+
                     </li>
                     <li>
                         <a href=""><img src="img/FundacionEquidad.CursoJava.20160518.025.jpg" ><h2>Ejecutivo Bancario</h2><p>Conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal</p></a>
@@ -132,6 +134,16 @@
                     </li>
                 </ul>
             </div>
+<!--content-->        
+           <div id="dialog" class="dialog">
+                            <h3>Recursos Humanos</h3><p>La capacitación tiene como principal objetivo proporcionar los conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal.<br>
+Serán en total 4 clases de 2 hs cada una (los martes de 19 a 21 hs). <br>En este curso verás los contenidos más importantes para poder desempeñarte en RR.HH: introducción al área de RRHH, reclutamiento y selección de personal, el armado de los puestos de trabajo, descripción de tareas y objetivos por puesto, armado de legajos de empleados, relaciones sindicales y cuestiones legales. <br>Al finalizar la capacitación, los asistentes lograrán aumentar sus posibilidades de acceder a un nuevo trabajo en relación a la creciente oferta laboral en las áreas de Recursos Humanos.
+<br>Duración total: 8 horas divididas en 4 clases de 2 horas cada una. 
+<br>Profesora: Catalina Cabana, Fundadora y Responsable de Selección en Humanamente RR.HH, docente en Escuela Da Vinci.
+<br>VALOR TOTAL DEL CURSO (este monto es el único que deberás abonar en todo el curso y por única vez)= $900, pero abonando antes del 12/04/17 accedés a un 15% de descuento, por lo cual pagarás en total $765.
+<br>¡Te esperamos!
+<br>Por consultas escribinos a cursos@equidad.org o llamanos al 4862-6008</p><button type="button" onclick="https://docs.google.com/forms/d/1uu_SVT5-kadEkoehk_mhTrhJg2HivIdlkSCFPctfWJE/viewform?edit_requested=true">inscribirse</button>
+  </div>
 </section>
 
 <section class="container" id="sec4">
@@ -210,5 +222,9 @@
     </footer> 
     <script type="text/javascript" src="js/carrusel_js.js"></script>
     <script type="text/javascript" src="js/timeline.js"></script>
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/modalcursos.js"></script>
 </body>
 </html>
