@@ -223,8 +223,8 @@
 }
 .modal_close{ 
   position: absolute; 
-  top: 0; 
-  right: 0;  
+  top: -2em; 
+  right: -2em;  
   background: #606061; 
   color: #FFF; 
   width: 2em; 
@@ -261,6 +261,7 @@
   display: inline-block;
   margin-top: 20px; 
 }
+
 
 /*aliados*/
 .donadores{
@@ -342,4 +343,56 @@
 }    
 
   #sec6{ background-color: #b7b7b7; position: relative; top: 0vh; left: 0vw; }
+/* TALLER */
+  .img-taller{
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100%;
+      background-image: url(../img/taller.jpg);
+      padding-top: 20%;
+      padding-bottom: 10%;
+  }
 
+  .img-taller div{
+      position: absolute;
+      background-color: rgba(0,0,0,.55);
+      padding: 4% 8% 4% 12%;
+      text-align: center;
+      /*min-height: 80%;*/
+      min-height: 60%;
+      max-height: 75%;
+  }
+
+  .img-taller h1{
+      font-size: 6vh;
+      color: orange;
+  }
+
+  .img-taller span{
+      color: white;
+      font-size: 3.5vh;
+  }
+
+  .img-taller button{
+      background-color: orange;
+      border-radius: 5px;
+      color:white;
+      margin-top: 10%;
+      widows: ; ;
+      border: none;
+      outline: none;
+      padding: .7em;
+      font-size: 2vh;
+  }
+
+  .img-taller button:focus{
+    background-color: black;
+  }
+  .img-taller button:hover{
+
+    background-color: #F7AA00;
+  }
+}

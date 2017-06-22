@@ -142,13 +142,13 @@
 }
 
 .img-taller h1{
-    font-size: 2em;
+    font-size: 7em;
     color: orange;
 }
 
 .img-taller span{
     color: white;
-    font-size: 1em;
+    font-size: 3em;
 }
 
 .img-taller button{
@@ -212,6 +212,69 @@
     border-radius: 100px;
     position: center;
 }
+/*modal cursos*/
+.modal_cursos_container{
+  width: 100vw; 
+  height: 100vh; 
+  opacity: 0;
+  background-color: rgba(5,5,5,.8); 
+  position: fixed; top: 0vh; 
+  left: 0vw; z-index: 1000;
+  transition: opacity .5s ease-in-out;
+  pointer-events: none; 
+}
+.modal_cursos_container:target { 
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal_cursos_contenedor{
+  width: 70vw;
+  height: 85vh;
+  position: relative;
+  top: 10vh;
+  left: 15vw; 
+}
+.modal_close{ 
+  position: absolute; 
+  top: -2em; 
+  right: -2em;  
+  background: #606061; 
+  color: #FFF; 
+  width: 2em; 
+  height: 2em; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 2em;
+  font-size: .5em; 
+}
+.modal_cursos_content{
+  background-color: #b7b7b7; 
+  width: 100%;
+  height: 100%;
+  padding:30px;
+  text-align: center;
+  overflow-y: auto;
+}
+.modal_cursos_texto{
+  text-align: center;
+}
+.modal_cursos_title{
+  padding-top: 1px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.button_link{
+  background-color: #ffa500;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px; 
+}
+
 
 /* Noticias */
 #sec4{ background-color: #B9B9B9;}
