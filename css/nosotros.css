@@ -1,0 +1,155 @@
+/*******************
+**Estilos Mobile**
+*******************/
+
+*{ margin: 0; padding: 0; box-sizing: border-box;
+list-style: none; text-decoration: none; }
+
+.container_nosotros{ width: 100vw; height: 100vh; background-color: #b9b9b9;
+padding-top: 10vh;overflow: hidden;}
+
+.nosotros_title{ height: 2em; text-align: center; text-transform: uppercase;
+font-style: italic; font-weight: bold; font-family: 'Roboto Condensed', sans-serif;}
+
+.nosotros_video{ background-color: #212121; height: 27.5vh;
+display: flex; justify-content: center; align-self: center;}
+
+.nosotros_video video{ max-width: 100%;}
+
+
+.nosotros_parrafo{ width: 80vw; height: 30vh; text-align: center; display: flex; justify-content: center; align-content:  center; flex-direction: column;
+font-size: 1em; position: relative; top: 15vh; left: 10vw;}
+
+.nosotros_parrafo_2{ visibility: hidden;}
+
+.nosotros_iconos{ width: 18em; height: 6em;
+display: flex; flex-direction: row; justify-content: center;
+ text-align: center; align-items: center; position: relative;top: 0vh; left: 1em;}
+
+.nosotros_iconos a { width: 6em; height: 6em;text-align: center; color: #525252;}
+
+.personal h2{ text-align: center;width: 6em; height: 2em;  font-size: 1em;}
+
+.propuesta h2{ text-align: center;width: 6em; height: 2em;  font-size: 1em;}
+
+.personal img{ text-align: center;width: 4em; height: 4em; font-size: 1em;}
+
+.propuesta img{ text-align: center;width: 4em; height: 4em; font-size: 1em;}
+    /********************************
+    ***Estilos Modal Nosotros***
+    *******************************/
+    .modal_clientes_container{ width: 100vw; height: 100vh; opacity: 0;
+      background-color: rgba(5,5,5,.8); position: fixed; top: 0vh; left: 0vw; z-index: 1000; transition: opacity .5s ease-in-out; pointer-events: none; }
+      .modal_clientes_container:target { opacity: 1; pointer-events: auto;}
+
+      .modal_title{ width: 100%; height: 2em; font-size: 1.5em; text-align: center; display: flex; justify-content: center; align-content: center;
+      color: #F7B700; padding-top: .5em; }
+
+      .modal_clientes_content{ background-color: #525252; width: 82.5vw;
+        height: 80vh; position: relative; top: 10vh; left: 10vw;}
+
+      .rows{ width: 10em; height: 5em; display: flex; justify-content: center; flex-direction: column; align-items: center;position: absolute;}
+    .rows img{ max-width: 100%;  border-radius:50%; }
+    .rows h3{ width: 10em; text-align: center; height: 3em; font-size: .75em;
+    color: #242424; padding-top: .5em;}
+
+    .row-1{  top: 5em; left: -1em;}
+    .row-2{  top: 5em; left: 8em;}
+    .row-3{  top: 12em; left: -1em;}
+    .row-4{  top: 12em; left:8em;}
+    .row-5{  top: 18em; left: 3em;}
+
+    .modal_close{ position: absolute; top: -2em; right:-2em;  background: #606061; color: #FFF; width: 2em; height: 2em; display: flex; justify-content: center; align-items: center; border-radius: 2em;
+    font-size: .5em; }
+
+    .modal_prop_container{ width: 100vw; height: 100vh; opacity: 0;
+      background-color: rgba(5,5,5,.8); position: fixed; top: 0vh; left: 0vw; z-index: 1000; transition: opacity .5s ease-in-out; pointer-events: none; }
+      .modal_prop_container:target { opacity: 1; pointer-events: auto;}
+      .modal_prop_content{ background-color: #b7b7b7; width: 82.5vw;
+        height: 85vh; position: relative; top: 10vh; left: 10vw;}
+      .modal_subtitle{ width: 100%; height: 2em; font-size: 1.5em; text-align: center; display: flex; justify-content: center; align-content: center;
+      color: #404040; padding-top: .5em; }
+      .modal_hide{ display: none;}
+      .reciclaje{ text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 1em; margin-bottom: 1em;}
+      .proyecto{ text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 1em;}
+
+
+      /*******************
+      **Estilos Escritorio**
+      *******************/
+      @media screen and ( min-width: 1280px){
+
+        .container_nosotros{ position: relative; top: 0vh; left: 0vw; }
+
+        .nosotros_video{width: 45vw;height: 45vh;  position:absolute;
+          top: 25vh; left: 10vw;}
+
+        .nosotros_video video{ width: 100%; height: 100%; }
+
+        .nosotros_title{ text-align: center; font-size: 2em; padding-top: 3em;
+            padding-bottom: .4em; text-transform: uppercase;}
+
+        .nosotros_parrafo {  width: 30vw; height: 45vh; padding: 1em; display: flex; flex-wrap: wrap; justify-content: center; text-align: left; position: absolute; top: 20vh; left: 57.5vw; font-size: 1em;}
+
+        .nosotros_parrafo_2{ visibility: visible; padding-top: 1em;}
+
+        .nosotros_iconos{ width: 25em; height: 12.5em; position: absolute;
+          top: 50vh; left: 57.5vw;  display: flex; justify-content: center; flex-direction: row;  }
+
+        .personal { width: 12.5em; height: 12.5em; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+        .propuesta{width: 12.5em; height: 12.5em; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+        .equipo_container img{ width: 5em; height: 5em;}
+
+        .equipo_container a{ color: #f2f2f2; }
+            /* Nosotros Modal Clientes */
+        .modal_clientes_container{ position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(5,5,5,.8);
+          display: flex; justify-content: center; align-items: center;
+          z-index: 1000; opacity: 0; transition: opacity .5 ease-in; pointer-events: none;}
+
+        .modal_clientes_container:target { opacity: 1; pointer-events: auto;}
+
+        .modal_title{ width: 100%; height: 2em; font-size: 5em; text-align: center; display: flex; justify-content: center; align-content: center;
+        color: #F7B700; padding-top: .5em; }
+
+        .modal_clientes_content{ position: relative; width: 60vw;
+          height: 90vh;  background-color: #b7b7b7; left: 0vw;
+          top: 0vh;}
+
+        .modal_close{ position: absolute; top: 2em; right: 2em;  background: #606061; color: #FFF; width: 5em; height: 5em; display: flex; justify-content: center; align-items: center; border-radius: 5em;
+            font-size: 1em; }
+
+            .rows{ width: 20em; height: 10em; display: flex; justify-content: center; flex-direction: column; align-items: center;position: absolute;}
+          .rows img{ max-width: 100%;  border-radius:50%; }
+          .rows h3{ width: 20em; text-align: center; height: 6em;
+            font-size: 1.5em; color: #242424; padding-top: .5em;}
+
+          .row-1{  top: 15em; left: 12.5em;}
+          .row-2{  top: 15em; left: 37em;}
+          .row-3{  top: 30em; left: 0em;}
+          .row-4{  top: 30em; left:25em;}
+          .row-5{  top: 30em; left: 50em;}
+        /* Fin Nosotros Modal Clientes */
+
+            /* Nosotros Modal RSE */
+        .modal_prop_container{ position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(5,5,5,.8);
+          display: flex; justify-content: center; align-items: center;
+          z-index: 1000; opacity: 0; transition: opacity .5 ease-in; pointer-events: none;}
+        .modal_prop_container:target { opacity: 1; pointer-events: auto;}
+        .modal_prop_content{ position: relative; width: 60vw;
+          height: 90vh;  background-color: #b7b7b7; left: 0vw;
+          top: 0vh;}
+
+          .modal_subtitle{ width: 100%; height: 2em; font-size: 3em; text-align: center; display: flex; justify-content: center; align-content: center;
+          color: #404040; padding-top: .5em; }
+          .modal_hide{ text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding-top: 1em; margin-bottom: 1em;  font-size: 1.25em}
+            .modal_hide h3{ font-size: 3em; }
+          .reciclaje{ text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 1em; margin-bottom: 1em;font-size: 1.25em}
+          .reciclaje h3{ font-size: 3em; }
+          .proyecto{ text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 1em;font-size: 1.25em}
+          .proyecto h3{ font-size: 3em; }
+            /* Fin Nosotros Modal RSE */
+
+      }

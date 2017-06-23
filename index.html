@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilos_escritorio.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
 </head>
@@ -54,15 +54,15 @@
             
          <ul>          
                 
-         <li><a href="http://www.facebook.com/" target="_blank"><img src="img/facebook.png"></a></li>
+         <li><a href="https://www.facebook.com/fequidad" target="_blank"><img src="img/facebook.png"></a></li>
                 
-         <li><a href="http://www.twitter.com/" target="_blank"><img src="img/twitter.png"></a></li>
+         <li><a href="https://twitter.com/@_Equidad" target="_blank"><img src="img/twitter.png"></a></li>
                 
-         <li><a href="http://www.linkedin.com/" target="_blank"><img src="img/linkedin.png"></a></li>
+         <li><a href="https://www.linkedin.com/company-beta/380926/" target="_blank"><img src="img/linkedin.png"></a></li>
                 
-         <li><a href="https://plus.google.com/" target="_blank"><img src="img/google.png"></a></li>
+         <li><a href="https://plus.google.com/107429073542327033066" target="_blank"><img src="img/google.png"></a></li>
                 
-         <li><a href="http://www.youtube.com" target="_blank"><img src="img/youtube.png"></a></a></li>
+         <li><a href="https://www.youtube.com/user/equidadtv?sub_confirmation=1" target="_blank"><img src="img/youtube.png"></a></a></li>
             
          </ul>
         
@@ -87,20 +87,79 @@
 <!--fin slider-->
 </section>
 
-<section class="container" id="sec1">
-    <h1>Brecha digital</h1>
-    <div class="video">
-        <video src="EQUIDAD.mp4" controls=""></video>
-    </div>
-    <article>
-            <p>
-                Respecto al acceso a la tecnología, nuestra propuesta es reciclar los equipos informáticos que las empresas y los particulares ya no utilizan ya sea por obsolescencia o mal funcionamiento, con el fin de donarlos a entidades sociales y educativas de todo el país.
-                <br>
-                En cuanto al acceso a la capacitación y al uso de los dispositivos tecnológicos, brindamos cursos de informática (programación, operación y reparación de PC, entre otros) con el objetivo de ofrecer herramientas de inserción laboral a jóvenes y adultos.
-            </p>
-    </article>  
- 
-</section>
+<section class="container_nosotros" id="sec1">
+        <h1 class="nosotros_title">Brecha digital</h1>
+        <div class="nosotros_video">
+            <video src="EQUIDAD.mp4" controls ></video>
+        </div>
+        <article class="nosotros_parrafo">
+                <p class="nosotros_parrafo_1">
+                    Nuestra propuesta es reciclar los equipos informáticos que las empresas y los particulares ya no utilizan ya sea por obsolescencia o mal funcionamiento, con el fin de donarlos a entidades sociales y educativas de todo el país.</p>
+                    <br>
+                <p class="nosotros_parrafo_2">
+                  En cuanto al acceso a la capacitación y al uso de los dispositivos tecnológicos, brindamos cursos de informática (programación, operación y reparación de PC, entre otros) con el objetivo de ofrecer herramientas de inserción laboral a jóvenes y adultos.
+                </p>
+        </article>
+
+        <figure class="nosotros_iconos">
+            <a class="personal" href="#modal_Clientes">
+                <img src="img/user.svg" alt="icono_persona">
+                <h2>Conocenos</h2>
+            </a>
+            <a class="propuesta" href="#modal_Prop">
+                <img src="img/rse.svg" alt="icono_rse">
+                <h2>Nuestra Propuesta</h2>
+            </a>
+        </figure>
+
+        <div id="modal_Clientes" class="modal_clientes_container">
+            <div class="modal_clientes_content" >
+                <a href="#close" title="Close" class="modal_close">X</a>
+                <h1 class="modal_title">Nuestro Personal</h1>
+               <figure class="row-1 rows">
+                   <img src="img/equipo_1.jpeg" alt="">
+                   <h3>Presidenta <br>María Eugenia Estenssoro</h3>
+               </figure>
+                <figure class="row-2 rows">
+                   <img src="img/equipo_2.jpeg" alt="">
+                   <h3> Vicepresidente<br>Haroldo Grisanti</h3>
+               </figure>
+                <figure class="row-3 rows">
+                   <img src="img/equipo_3.jpeg" alt="">
+                   <h3>Consejo de Administración <br>Ernesto Krawchik</h3>
+               </figure>
+                <figure class="row-4 rows">
+                   <img src="img/equipo_4.jpeg" alt="">
+                   <h3>Consejo de Administración <br>Lisandro Bril</h3>
+               </figure>
+                <figure class="row-5 rows">
+                   <img src="img/equipo_5.jpeg" alt="">
+                   <h3>Consejo de Administración <br>Federico Seineldin</h3>
+               </figure>
+            </div>
+        </div>
+        <div id="modal_Prop" class="modal_prop_container">
+            <div class="modal_prop_content" >
+                <a href="#close" title="Close" class="modal_close">X</a>
+                <h1 class="modal_title">Propuesta RSE</h1>
+               <p>
+                   <ul class="programas">
+                      <h2 class="modal_subtitle">Nuestros programas:</h2>
+                       <li class="reciclaje"><h3>Taller de Reciclaje</h3>
+                        Transformamos computadoras en desuso en equipos listos para ser donados a escuelas y organizaciones de Argentina. De este modo cumplimos el doble objetivo de reducir la brecha digital y mitigar el
+                        impacto ambiental de los residuos electrónicos.
+                      </li>
+                       <li class="modal_hide"><h3>Escuela Técnica</h3>
+                        Brindamos cursos de informática con el fin de ampliar el acceso a las herramientas digitales y promover la inserción social y laboral de jóvenes, adultos y adultos mayores.
+                       </li>
+                       <li class="proyecto"><h3>Proyectos de RSE</h3>
+                        Realizamos propuestas integrales de provisión de equipamiento, capacitación y acompañamiento pedagógico para la incorporación de nuevas tecnologías en distintas comunidades de Argentina.
+                      </li>
+                   </ul>
+               </p>
+            </div>
+        </div>
+    </section>
 
 <section class="container" id="sec2">
     <div class="img-taller">
@@ -122,27 +181,66 @@
             <div >
                 <ul class="cursos">
                     <li>
-                        <a href="" style=""><img src="img/FundacionEquidad.CursoJava.20160518.003.jpg"><h2>Recursos Humanos</h2><p>Conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal</p><button id="boton-modalcursos">ver más...</button> 
+                        <a class="descripcion_cursos" href="#modal_curso1" ><img src="img/FundacionEquidad.CursoJava.20160518.003.jpg"><h2>Recursos Humanos</h2><p>Conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal</p>
                         </a>
 
                     </li>
                     <li>
-                        <a href=""><img src="img/FundacionEquidad.CursoJava.20160518.025.jpg" ><h2>Ejecutivo Bancario</h2><p>Conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal</p></a>
+                        <a class="descripcion_cursos" href="#modal_curso2"><img src="img/FundacionEquidad.CursoJava.20160518.025.jpg" ><h2>Ejecutivo Bancario</h2><p>Conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal</p></a>
                     </li>
                     <li>
-                        <a href=""><img src="img/_MG_2659.jpg" ><h2>Administrativo</h2><p>Herramientas necesarias para poder desenvolverse en estudios contables y empresas, en los sectores de administración y contabiidad.</p></a>
+                        <a class="descripcion_cursos" href="#modal_curso3"><img src="img/_MG_2659.jpg" ><h2>Administrativo</h2><p>Herramientas necesarias para poder desenvolverse en estudios contables y empresas, en los sectores de administración y contabiidad.</p></a>
                     </li>
                 </ul>
             </div>
-<!--content-->        
-           <div id="dialog" class="dialog">
-                            <h3>Recursos Humanos</h3><p>La capacitación tiene como principal objetivo proporcionar los conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal.<br>
+<!--content modal -->        
+           <div id="modal_curso1" class="modal_cursos_container">
+           <div class="modal_cursos_contenedor"><a href="#close" title="close" class="modal_close">X</a>
+            <div class="modal_cursos_content">
+            <div class="modal_cursos_texto">
+           <h2 class="modal_cursos_title">Recursos Humanos</h2><p>La capacitación tiene como principal objetivo proporcionar los conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal.<br>
 Serán en total 4 clases de 2 hs cada una (los martes de 19 a 21 hs). <br>En este curso verás los contenidos más importantes para poder desempeñarte en RR.HH: introducción al área de RRHH, reclutamiento y selección de personal, el armado de los puestos de trabajo, descripción de tareas y objetivos por puesto, armado de legajos de empleados, relaciones sindicales y cuestiones legales. <br>Al finalizar la capacitación, los asistentes lograrán aumentar sus posibilidades de acceder a un nuevo trabajo en relación a la creciente oferta laboral en las áreas de Recursos Humanos.
 <br>Duración total: 8 horas divididas en 4 clases de 2 horas cada una. 
 <br>Profesora: Catalina Cabana, Fundadora y Responsable de Selección en Humanamente RR.HH, docente en Escuela Da Vinci.
-<br>VALOR TOTAL DEL CURSO (este monto es el único que deberás abonar en todo el curso y por única vez)= $900, pero abonando antes del 12/04/17 accedés a un 15% de descuento, por lo cual pagarás en total $765.
+<br>VALOR TOTAL DEL CURSO = $900, pero abonando antes del 12/04/17 accedés a un 15% de descuento, por lo cual pagarás en total $765.
 <br>¡Te esperamos!
-<br>Por consultas escribinos a cursos@equidad.org o llamanos al 4862-6008</p><button type="button" onclick="https://docs.google.com/forms/d/1uu_SVT5-kadEkoehk_mhTrhJg2HivIdlkSCFPctfWJE/viewform?edit_requested=true">inscribirse</button>
+<br>Por consultas escribinos a cursos@equidad.org o llamanos al 4862-6008</p>
+</div>
+<a class="button_link" href="https://docs.google.com/forms/d/1uu_SVT5-kadEkoehk_mhTrhJg2HivIdlkSCFPctfWJE/viewform?edit_requested=true" target="_blank"> Inscribirse</a>
+  </div>
+  </div>
+  </div>
+  <div id="modal_curso2" class="modal_cursos_container">
+           <div class="modal_cursos_contenedor"><a href="#close" title="close" class="modal_close">X</a>
+            <div class="modal_cursos_content">
+            <div class="modal_cursos_texto">
+           <h2 class="modal_cursos_title">Ejecutivo Bancario</h2><p>La capacitación tiene como principal objetivo proporcionar los conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal.<br>
+Serán en total 4 clases de 2 hs cada una (los martes de 19 a 21 hs). <br>En este curso verás los contenidos más importantes para poder desempeñarte en RR.HH: introducción al área de RRHH, reclutamiento y selección de personal, el armado de los puestos de trabajo, descripción de tareas y objetivos por puesto, armado de legajos de empleados, relaciones sindicales y cuestiones legales. <br>Al finalizar la capacitación, los asistentes lograrán aumentar sus posibilidades de acceder a un nuevo trabajo en relación a la creciente oferta laboral en las áreas de Recursos Humanos.
+<br>Duración total: 8 horas divididas en 4 clases de 2 horas cada una. 
+<br>Profesora: Catalina Cabana, Fundadora y Responsable de Selección en Humanamente RR.HH, docente en Escuela Da Vinci.
+<br>VALOR TOTAL DEL CURSO = $900, pero abonando antes del 12/04/17 accedés a un 15% de descuento, por lo cual pagarás en total $765.
+<br>¡Te esperamos!
+<br>Por consultas escribinos a cursos@equidad.org o llamanos al 4862-6008</p>
+</div>
+<a class="button_link" href="https://docs.google.com/forms/d/1uu_SVT5-kadEkoehk_mhTrhJg2HivIdlkSCFPctfWJE/viewform?edit_requested=true" target="_blank"> Inscribirse</a>
+  </div>
+  </div>
+  </div>
+  <div id="modal_curso3" class="modal_cursos_container">
+           <div class="modal_cursos_contenedor"><a href="#close" title="close" class="modal_close">X</a>
+            <div class="modal_cursos_content">
+            <div class="modal_cursos_texto">
+           <h2 class="modal_cursos_title">Administrativo</h2><p>La capacitación tiene como principal objetivo proporcionar los conocimientos y herramientas necesarias para incorporarse al mercado de trabajo en las áreas de selección y administración de personal.<br>
+Serán en total 4 clases de 2 hs cada una (los martes de 19 a 21 hs). <br>En este curso verás los contenidos más importantes para poder desempeñarte en RR.HH: introducción al área de RRHH, reclutamiento y selección de personal, el armado de los puestos de trabajo, descripción de tareas y objetivos por puesto, armado de legajos de empleados, relaciones sindicales y cuestiones legales. <br>Al finalizar la capacitación, los asistentes lograrán aumentar sus posibilidades de acceder a un nuevo trabajo en relación a la creciente oferta laboral en las áreas de Recursos Humanos.
+<br>Duración total: 8 horas divididas en 4 clases de 2 horas cada una. 
+<br>Profesora: Catalina Cabana, Fundadora y Responsable de Selección en Humanamente RR.HH, docente en Escuela Da Vinci.
+<br>VALOR TOTAL DEL CURSO = $900, pero abonando antes del 12/04/17 accedés a un 15% de descuento, por lo cual pagarás en total $765.
+<br>¡Te esperamos!
+<br>Por consultas escribinos a cursos@equidad.org o llamanos al 4862-6008</p>
+</div>
+<a class="button_link" href="https://docs.google.com/forms/d/1uu_SVT5-kadEkoehk_mhTrhJg2HivIdlkSCFPctfWJE/viewform?edit_requested=true" target="_blank"> Inscribirse</a>
+  </div>
+  </div>
   </div>
 </section>
 
