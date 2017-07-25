@@ -274,14 +274,16 @@
   margin-top: 20px; 
 }
 /* Noticias */
-#sec4{ background-color: #B9B9B9;}
+#sec4{ background-color: #B9B9B9;
+margin-bottom: 20px;
+}
 
 .contenedor_notis{
   padding: 0px;
   width: 852px;
   height: 620px;
   margin-left: 5vw;
-  margin-top: 10vh;
+  margin-top: 2vh;
   float: left;
 }
 .notis{  
@@ -338,30 +340,60 @@
   background: url(../img/noti_imagen3.png);
 }
 #noti4{
-  background: url(../img/noti_imagen4.png);
+  background: url(../img/noti_imagen4.png);  
+}
+.lateral_noticias{
+  float: left;
+  width: 400px;
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+}
+.lateral_noticias img{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* Style the tab */
+.notitab{
+    width: 400px;
+    padding: 10px;
+
 }
 
-#calendario{
-  margin-top: 5%;
-  margin-left: 6%; 
-  width: 175px;
-  height: 149px;
-  float: left;
-  background: url(../img/calendario.png);
-  
+/* Style the buttons inside the tab */
+.notitab_button {
+    background-color: #fafafa;
+    float: left;
+    border: 3px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 180px;
+    margin-bottom: 20px;
 }
-.newsletter{
 
-  margin-top: 5%;
-  margin-left: 12%;
-  float: left;
-  bottom: 0;
-  background-color: #be8005;
+/* Change background color of buttons on hover */
+.notitab_button:hover {
+    background-color: #ffb31a;
+    color:white;
+    
 }
-.newsletter a{
-  display: block;
-  width: 130px;
-  height: 40px;
+
+/* Create an active/current tablink class */
+.notitab_button.active {
+    background-color: #ffb31a;
+}
+
+.botton_newsletter{
+  background-color: #ffa500;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px; 
 }
 
 /**  MODAL NEWSLETTER   **/

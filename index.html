@@ -284,25 +284,27 @@ Serán en total 4 clases de 2 hs cada una (los martes de 19 a 21 hs). <br>En est
         </div>          
     </div>
 <!--lateral derecho (Boton de noticias y prensa con el calendario)-->
-    <div id="botonera">
-        <a href="#noticias">Noticias</a>
-        <a href="#prensa">Prensa</a>
-    </div>
 
-    <div id="calendario"></div>
+    <div class="lateral_noticias">
+       <div class="notitab">
+        <a class="notitab_button" >Noticias</a> <a class="notitab_button" >Prensa</a>
+        </div>
+        <img src="img/calendario.png">
+       <a class="botton_newsletter" href="#abrirModal">Newsletter</a>
+    </div>
 <!-- ................Newsletter con modal....................... -->
-    <a class=".nesletter" href="#abrirModal">Newsletter</a>
+   
     
     <div id="abrirModal" class="modalDialogo">
-        <div style="padding-top: 200px;">
+        <div>
             <a href="#close" title="Close" class="close">X</a>
-            <h1 style="margin-top: 0px; margin-bottom: 0px; margin-left: 29px; border-left-width: 64px;">Tenemos Newsletter!</h1>
+            <h1>Tenemos Newsletter!</h1>
         </br>
-            <p style="margin-top: 0px; margin-left: 45px;">Suscribite y enterate de todos las novedades</p>
+            <p ">Suscribite y enterate de todos las novedades</p>
             <form action="#">
-                <input id="entrada" class="box" type="text" name="Introduce tu mail" placeholder="Introduce tu mail" style="margin-left: 20px; height: 30px; width: 421px; padding-left: 8px;">
+                <input id="entrada" class="box" type="text" name="Introduce tu mail" placeholder="Introduce tu mail">
                 <br>
-                <input type="submit" value="Suscribirse" style="margin-left: 324px;margin-top: 10px;">
+                <input type="submit" value="Suscribirse">
             </form>
         </div>
     </div>

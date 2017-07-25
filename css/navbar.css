@@ -1,0 +1,35 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family:sans-serif; list-style: none; text-decoration: none;}
+
+/********
+Navbar Escritorios
+*********/
+
+.navbar{ position: fixed; top: 0; width: 100vw; height: 5rem; background-color: rgba(10,10,10,.5);
+display: flex; flex-direction: row; justify-content: center; align-items: center; font-family: 'Roboto Condensed'; text-transform: uppercase; }
+.navbar-list{ width: 10rem; display: flex; height: 70rem;
+	flex-direction: column; justify-content: center; position: relative; left: 5rem; top: 15rem; background-color: crimson; }
+.navbar-items{ width: 5rem; height: 10rem; display: flex; align-items: center; text-align: center;  }
+.navbar-links{ color: #f2f2f2;  }
+.link-active{ color: #F7B700; }	
+.navbar-logo{ display: none; }
+.nav-logo{  width: 10rem; margin-right: 5rem; position: relative;top: 0rem; left: 0rem;  }
+.nav-logo-link{  width: 10rem; height: 5rem; display: flex; align-items: center; text-align: center;   }
+
+
+
+/********
+Navbar Escritorios
+*********/
+@media screen and ( min-width: 1280px){
+
+.navbar{ position: fixed; top: 0; width: 100vw; height: 5rem; background-color: rgba(10,10,10,.5);
+display: flex; flex-direction: row; justify-content: center; align-items: center; }
+.nav-logo{ display: none }
+.navbar-list{ width: 70rem; display: flex; height: 5rem;
+	flex-direction: row; justify-content: space-between;position: relative; left: 0rem; top: 0rem; background-color: transparent;  }
+.navbar-items{ width: 10rem; height: 5rem; display: flex; align-items: center; text-align: center; }
+.navbar-links{ color: #f2f2f2;  }
+.link-active{ color: #F7B700; }	
+.navbar-logo{ width: 10rem; margin-right: 5rem; }
+
+}
