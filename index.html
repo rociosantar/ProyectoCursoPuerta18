@@ -88,7 +88,7 @@
 </section>
 
 <section class="container" id="sec1">
-    <h1>Brecha digital</h1>
+    <h1 class="section_title">Brecha digital</h1>
     <div class="video">
         <video src="EQUIDAD.mp4" controls ></video>
     </div>
@@ -111,37 +111,38 @@
         </a>
     </figure> 
     
-    <div id="modal_Clientes" class="modal_clientes_container">
-        <div class="modal_clientes_content" >
-            <a href="#close" title="Close" class="modal_clientes_close">X</a>
-            <h1>Nuestro Personal</h1>
-           <figure class="row-1">
-               <img src="img/equipo_1.jpeg" alt="">
-               <h3>Presidenta <br>María Eugenia Estenssoro</h3>
-           </figure>
-            <figure class="row-2">
-               <img src="img/equipo_2.jpeg" alt="">
-               <h3> Vicepresidente<br>Haroldo Grisanti</h3>
-           </figure>
-            <figure class="row-3">
-               <img src="img/equipo_3.jpeg" alt="">
-               <h3>Consejo de Administración <br>Ernesto Krawchik</h3>
-           </figure>
-            <figure class="row-4">
-               <img src="img/equipo_4.jpeg" alt="">
-               <h3>Consejo de Administración <br>Lisandro Bril</h3>
-           </figure>
-            <figure class="row-5">
-               <img src="img/equipo_5.jpeg" alt="">
-               <h3>Consejo de Administración <br>Federico Seineldin</h3>
-           </figure>
+    <div id="modal_Clientes" class="modal_base_container modal_clientes_container">
+        <div class="modal_base_content modal_clientes_content" >
+          <a href="#close" title="Close" class="modal_close">X</a>
+          <h1 class="modal_title">Nuestro Personal</h1>
+          <div class="modal_clientes_grid">
+            <div class="col-cliente nosotros-cliente-1">
+              <img class="nosotros-foto" src="img/equipo_1.jpeg" alt="">
+              <h3>Presidenta <br>María Eugenia Estenssoro</h3>
+            </div>
+            <div class="col-cliente nosotros-cliente-2">
+              <img class="nosotros-foto" src="img/equipo_2.jpeg" alt="">
+              <h3> Vicepresidente<br>Haroldo Grisanti</h3>
+            </div>
+            <div class="col-cliente nosotros-cliente-3">
+              <img class="nosotros-foto" src="img/equipo_3.jpeg" alt="">
+              <h3>Consejo de Administración <br>Ernesto Krawchik</h3>
+            </div>
+            <div class="col-cliente nosotros-cliente-4">
+              <img class="nosotros-foto" src="img/equipo_4.jpeg" alt="">
+              <h3>Consejo de Administración <br>Lisandro Bril</h3>
+            </div>
+            <div class="col-cliente nosotros-cliente-5">
+              <img class="nosotros-foto" src="img/equipo_5.jpeg" alt="">
+              <h3>Consejo de Administración <br>Federico Seineldin</h3>
+            </div>
+          </div>
         </div>
     </div>
-    <div id="modal_Prop" class="modal_prop_container">
-        <div class="modal_prop_content" >
-            <a href="#close" title="Close" class="modal_prop_close">X</a>
-            <h1>Propuesta RSE</h1>
-           <p>
+    <div id="modal_Prop" class="modal_base_container modal_prop_container">
+        <div class="modal_base_content modal_prop_content" >
+          <a href="#close" title="Close" class="modal_close">X</a>
+          <h1 class="modal_title">Propuesta RSE</h1>
                <ul class="programas">
                   <h2>Nuestros programas:</h2>
                    <li><h3>Taller de Reciclaje</h3>
@@ -155,7 +156,6 @@
                     Realizamos propuestas integrales de provisión de equipamiento, capacitación y acompañamiento pedagógico para la incorporación de nuevas tecnologías en distintas comunidades de Argentina.
                   </li>
                </ul>
-           </p>
         </div>
     </div>
 </section>

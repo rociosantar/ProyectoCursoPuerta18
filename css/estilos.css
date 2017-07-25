@@ -16,3 +16,121 @@
 
     body{ background-color: #212121;}
 
+
+/* ESTILOS BASE */
+
+/* secciones */
+
+.section_title {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 3em;
+  padding-bottom: .4em;
+  text-transform: uppercase;
+}
+
+/* dialogos modales */
+.modal_base_container {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  background-color: rgba(5,5,5,.8);
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  z-index: 1000;
+  transition: opacity .5s ease-in-out;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_base_container:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal_base_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  max-width: 80vw;
+  background-color: #b7b7b7;
+  padding: 5vh 5vw;
+}
+
+.modal_close {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  background: #606061;
+  color: #FFF;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  border-radius: 1em;
+  font-size: 1em;
+}
+
+.modal_close:hover {
+  background-color:#f8b700;
+  color: #212121;
+}
+
+.modal_base_content h1,
+.modal_base_content h2,
+.modal_base_content h3 {
+  padding: 0;
+}
+
+.modal_title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+
+/* Modal Clientes */
+
+.modal_clientes_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.modal_clientes_grid .col-cliente {
+  text-align: center;
+}
+
+.modal_clientes_grid .col-cliente .nosotros-foto {
+  border-radius: 50%;
+}
+
+.modal_clientes_grid .nosotros-cliente-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.modal_clientes_grid .nosotros-cliente-2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.modal_clientes_grid .nosotros-cliente-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.modal_clientes_grid .nosotros-cliente-4 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.modal_clientes_grid .nosotros-cliente-5 {
+  grid-column: 5;
+  grid-row: 1;
+}
+

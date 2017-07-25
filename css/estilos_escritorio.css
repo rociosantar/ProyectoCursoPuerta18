@@ -68,9 +68,6 @@
     .video{width: 45vw;height: 45vh;  position:absolute; top: 20vh; left: 10vw;}
     
     video{ width: 100%; height: 100%; }
-
-    #sec1 h1{ text-align: center; font-size: 2em; padding-top: 3em; 
-        padding-bottom: .4em; text-transform: uppercase;}
     #sec1 article {  width: 30vw; height: 45vh; padding: 1em; display: flex;
     flex-wrap: wrap; justify-content: center; text-align: left; position: absolute;
     top: 20vh; left: 57.5vw; }
@@ -80,43 +77,17 @@
     .rse{width: 12.5em; height: 12.5em; display: flex; justify-content: center; align-items: center; flex-direction: column; }
     .equipo_container img{ width: 5em; height: 5em;}
     .equipo_container a{ color: #f2f2f2; }
-        /* Nosotros Modal Clientes */    
-    .modal_clientes_container{ position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(5,5,5,.8); display: flex; justify-content: center; align-items: center;
-      z-index: 1000; opacity: 0; transition: opacity .5 ease-in; pointer-events: none;}
-
-    .modal_clientes_container:target { opacity: 1; pointer-events: auto;}
-
-    .modal_clientes_content{ position: relative; width: 60vw; height: 90vh;  background-color: #b7b7b7; 
-      display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
-
-    .modal_clientes_content h1{ grid-column-start: 2; grid-column-end: 12; grid-row-start: 1; grid-row-end: 1;  }
-    .modal_clientes_close{ position: absolute; top: 2em; right: 2em;  background: #606061; color: #FFF; width: 5em; height: 5em; display: flex; justify-content: center; align-items: center; border-radius: 5em; 
-        font-size: 1em; }
-    .row-1{grid-column-start: 4; grid-column-end: 6; grid-row-start: 2; grid-row-end: 3;  text-align: center;}
-    .row-1 img{ max-height: 100%;  border-radius:50%;}
-      .row-2{grid-column-start: 8; grid-column-end: 10; grid-row-start: 2; grid-row-end: 3;  text-align: center;}
-    .row-2 img{ max-height: 100%; border-radius:50%; }
-      .row-3{grid-column-start: 2; grid-column-end: 4; grid-row-start: 3; grid-row-end: 4;  text-align: center;}
-    .row-3 img{ max-height: 100%;  border-radius:50%;}
-      .row-4{grid-column-start: 6; grid-column-end: 8; grid-row-start: 3; grid-row-end: 4;  text-align: center;}
-    .row-4 img{ max-height: 100%; border-radius:50%; }
-      .row-5{grid-column-start: 10; grid-column-end:12; grid-row-start: 3; grid-row-end: 4;  text-align: center;}
-    .row-5 img{ max-height: 100%; border-radius:50%; }
-    /* Fin Nosotros Modal Clientes */
     
-        /* Nosotros Modal RSE */    
-    .modal_prop_container{ position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(5,5,5,.8); display: flex; justify-content: center; align-items: center;
-      z-index: 99999; opacity: 0; transition: opacity .5 ease-in; pointer-events: none;}
-    .modal_prop_container:target { opacity: 1; pointer-events: auto;}
-    .modal_prop_content{ position: relative; width: 50vw; height: 60vh;  background-color: #b7b7b7; display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center;}
-    .modal_prop_close{  position: absolute; top: 2em; right: 2em;  background: #606061; color: #FFF; width: 5em; height: 5em; display: flex; justify-content: center; align-items: center; border-radius: 5em; 
-        font-size: 1em;  transition: all .5s; }
-    .modal_prop_close:hover{ background-color:#f8b700; color: #212121; }
-    .modal_prop_content h1{ height: 2em; width: 100%;  font-size: 2em;  margin-top: -2.25em; display: flex; justify-content: center; align-items: center;}
-    .programas{ width: 80%; height: 90%; background-color: rgba(110,25,25,0); margin-top: -.25em;   }
-    .programas li{ height: 25%; margin-bottom: .75em;}
+        /* Nosotros Modal RSE */
         /* Fin Nosotros Modal RSE */
+
+
+.modal_base_content.modal_clientes_content {
+  max-width: 60vw;
+}
+.modal_base_content.modal_prop_content {
+  max-width: 60vw;
+}
 
 /*Taller*/
 
